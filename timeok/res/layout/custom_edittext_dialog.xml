@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/dialog_bg" >
+
+        <EditText
+            android:id="@+id/your_email"
+            style="@style/App_EditTextStyle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:hint="Enter your email"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" />
+
+        <Button
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/your_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dialog_ok_bttn_bg"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text=" OK "
+            android:textColor="#222222" />
+    </RelativeLayout>
+
+</RelativeLayout>

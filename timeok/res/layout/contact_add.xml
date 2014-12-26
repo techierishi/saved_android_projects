@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/contact_name"
+                style="@style/App_EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="Name"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/contact_phone"
+                style="@style/App_EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:editable="false"
+                android:hint="Phone"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:paddingRight="8dp" />
+
+            <EditText
+                android:id="@+id/contact_email"
+                style="@style/App_EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionDone"
+                android:paddingLeft="10dp" />
+
+            <include layout="@layout/attach_img_file" />
+
+            <Button
+                android:id="@+id/add_contact"
+                style="@style/App_ButtonStyle"
+                android:layout_marginBottom="10dp"
+                android:text="Save" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/flo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/view2"
+        android:layout_marginTop="10dp" >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <ViewStub
+            android:id="@+id/inflate_stub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout="@layout/nodatafound" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_above="@+id/brl" />
+
+    <LinearLayout
+        android:id="@+id/brl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="100"
+        android:layout_marginBottom="5dp" >
+
+        <Button
+            android:id="@+id/add_contact"
+            style="@style/App_ButtonStyle"
+            android:layout_weight="50"
+            android:text="ADD" />
+
+        <Button
+            android:id="@+id/select_contact"
+            style="@style/App_ButtonStyle"
+            android:layout_weight="50"
+            android:text="SELECT"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

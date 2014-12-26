@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/dialog_bg" >
+
+        <TextView
+            android:id="@+id/alert_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="Sample text"
+            android:textColor="#222222"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:weightSum="90" >
+
+            <Button
+                android:id="@+id/dialogButtonPos"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="30"
+                android:background="@drawable/dialog_no_bttn_bg"
+                android:text=" Yes "
+                android:textColor="#222222" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="50dp"
+                android:background="#a9a9a9" />
+
+            <Button
+                android:id="@+id/dialogButtonNeg"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="30"
+                android:background="@drawable/light_bttn_bg"
+                android:text=" No "
+                android:textColor="#222222" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="50dp"
+                android:background="#a9a9a9" />
+
+            <Button
+                android:id="@+id/dialogButtonCancel"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="30"
+                android:background="@drawable/dialog_yes_bttn_bg"
+                android:text=" Cancel "
+                android:textColor="#222222" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
