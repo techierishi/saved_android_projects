@@ -129,7 +129,7 @@ class SearchListAdpater extends BaseAdapter {
 
 		activity = (Activity) a;
 
-		Log.d(" SearchKeyValue Data >> ", "" + d.toString());
+		Log.d(ConstantClass.LOGTAG, "" + d.toString());
 		this.data = d;
 
 		this.arraylist = new ArrayList<SearchKeyValue>();
@@ -143,7 +143,7 @@ class SearchListAdpater extends BaseAdapter {
 	// Filter Class
 	public void filter(String charText) {
 
-		Log.d("Filter ", "Function calles");
+		Log.d(ConstantClass.LOGTAG, "Function calles");
 
 		charText = charText.toLowerCase(Locale.getDefault());
 		data.clear();
